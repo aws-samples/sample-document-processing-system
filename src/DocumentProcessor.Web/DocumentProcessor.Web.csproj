@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <!-- Disable scoped CSS - using regular CSS in app.css instead -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ScopedCssEnabled>false</ScopedCssEnabled>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="uploads\**" />
+    <Content Remove="uploads\**" />
+    <EmbeddedResource Remove="uploads\**" />
+    <None Remove="uploads\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="DocumentProcessor.db" />
+    <None Remove="DocumentProcessor.db-shm" />
+    <None Remove="DocumentProcessor.db-wal" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.10" />
+    <PackageReference Include="AWSSDK.BedrockRuntime" Version="3.7.401" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.401.1" />
+    <PackageReference Include="AWSSDK.S3" Version="3.7.402.10" />
+    <PackageReference Include="AWSSDK.SecretsManager" Version="3.7.400" />
+    <PackageReference Include="CsvHelper" Version="33.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10" />
+    <PackageReference Include="PdfPig" Version="0.1.11" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+{
+  "DocumentProcessor.Web": [
+    "Npgsql.EntityFrameworkCore.PostgreSQL",
+    "AWSSDK.S3",
+    "CsvHelper",
+    "PdfPig"
+  ]
+}
