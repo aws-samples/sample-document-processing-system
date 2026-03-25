@@ -33,7 +33,7 @@ public class AIService(IConfiguration configuration)
     {
         var request = new ConverseRequest
         {
-            ModelId = configuration["Bedrock:ClassificationModelId"] ?? "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+            ModelId = configuration["Bedrock:ClassificationModelId"] ?? "global.anthropic.claude-sonnet-4-6",
             Messages = [new Message { Role = ConversationRole.User, Content = [new ContentBlock { Text = prompt }] }],
             InferenceConfig = new InferenceConfiguration { MaxTokens = 2000, Temperature = 0.3f }
         };
