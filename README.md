@@ -177,7 +177,7 @@ be listed here.
 
 Set `Database:UseSecretsManager` to `true` to build the connection string from an AWS
 Secrets Manager secret whose description starts with
-`Password for RDS MSSQL used for MAM319.`:
+`Password for RDS MSSQL used for MAM417.`:
 
 ```json
 {
